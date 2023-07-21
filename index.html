@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="LineStringDistance.js" defer></script>
+</head>
+
+<body>
+    GEOJSON<br>
+    <textarea rows="20" cols="70" id="myTextarea"> {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [102.0, 0.0], [103.0, 1.0], [104.0, 0.0], [105.0, 1.0]
+          ]
+        },
+        "properties": {
+          "prop0": "value0",
+          "prop1": 0.0
+        }
+      }</textarea>
+    
+    <p>Naciśnij przycisk aby obliczyć długość łamanej.</p>
+
+    <button type="button" onclick="myFunction()">Oblicz</button>
+    
+    <p id="wynik"></p>
+</body>
+</html>
